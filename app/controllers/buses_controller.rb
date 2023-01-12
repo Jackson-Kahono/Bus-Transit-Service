@@ -6,7 +6,7 @@ class BusesController < ApplicationController
       end
        
        
-       def update
+    def update
            bus = find_bus
              if bus
                bus.update(bus_params)
@@ -14,16 +14,16 @@ class BusesController < ApplicationController
              else
                render json: {error: "Bus not found"}, status: :not_found
            end
-       end
+    end
       
-      def destroy
+    def destroy
         bus =find_bus
         if bus.destroy
           head :no_content
         else
           render json: {error: bus.errors.messages}, status: 422
         end
-      end
+    end
       
       def create
           bus = Bus.create(bus_params)
