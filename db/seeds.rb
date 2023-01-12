@@ -8,19 +8,19 @@
 
 buses = [
     {
-        bus_name:"Toxic",seater:40,passengers:40,status:"Empty",from:"Juja",to:"Ruiru",time:"8:00am"
+        bus_name:"Toxic",seater:40,passengers:40,status:"Empty",from:"CBD",to:"Alssops",time:"8:00am"
     },
     {
-        bus_name:"Batman",seater:60,passengers:60,status:"Half-empty",from:"CBD",to:"Thika",time:"1:00pm"
+        bus_name:"Batman",seater:60,passengers:60,status:"Half-empty",from:"CBD",to:"Juja",time:"1:00pm"
     },
     {
         bus_name:"Kingkong",seater:25,passengers:25,status:"2 seats",from:"KU",to:"Juja",time:"6:00am"
     },
     {
-        bus_name:"Mixtape",seater:70,passengers:69,status:"Empty",from:"Roysa",to:"CBD",time:"8:00pm"
+        bus_name:"Mixtape",seater:70,passengers:69,status:"Empty",from:"Juja",to:"GCM",time:"8:00pm"
     },
     {
-        bus_name:"Sugar",seater:10,passengers:10,status:"Empty",from:"Juja",to:"TRM",time:"9:00am"
+        bus_name:"Sugar",seater:10,passengers:10,status:"Empty",from:"CBD",to:"Thika",time:"9:00am"
     },
 
 ]
