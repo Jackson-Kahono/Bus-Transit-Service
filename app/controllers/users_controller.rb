@@ -1,14 +1,19 @@
 class UsersController < ApplicationController
 
+  protect_from_forgery with: :exception
+  skip_before_action :verify_authenticity_token
+  before_action :authorize, only: [:show, :edit, :update, :destroy]
+
     def index
         users = User.all
         render json: users
     end
 
     def create
-        user = User.create(user_params)
-        render json: user
-    end
+      user = User.create!(user_params)
+      session[:user_id] = user.id
+      render json: user, status: :created
+  end
 
     def destroy
         user =find_user
@@ -26,6 +31,6 @@ class UsersController < ApplicationController
       end
        
       def user_params
-        params.require(:user).permit(:fullname, :phonenumber, :password,:password_confirmation)
+        params.permit(:fullname, :phonenumber, :password, :password_confirmation)
       end
 end
