@@ -10,11 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_11_184914) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_17_104601) do
   create_table "access_tokens", force: :cascade do |t|
     t.string "token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer "bus_id"
+    t.integer "user_id"
+    t.boolean "isActive", default: false
+    t.integer "from_id"
+    t.integer "to_id"
+    t.integer "fare"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "buses", force: :cascade do |t|
+    t.string "bus_name"
+    t.integer "seater"
+    t.integer "passengers"
+    t.string "status"
+    t.string "from"
+    t.string "to"
+    t.string "time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "station_id"
   end
 
   create_table "mpesas", force: :cascade do |t|
@@ -23,6 +47,30 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_184914) do
     t.string "checkoutRequestID"
     t.string "merchantRequestID"
     t.string "mpesaReceiptNumber"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "amount"
+    t.string "transaction_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "booking_id"
+  end
+
+  create_table "stations", force: :cascade do |t|
+    t.string "station_name"
+    t.integer "fare"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "fullname"
+    t.string "phonenumber"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
