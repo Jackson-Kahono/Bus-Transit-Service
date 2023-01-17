@@ -7,6 +7,8 @@ class UsersController < ApplicationController
 
     def create
         if params["password_digest"] == params["confirmpassword"]
+            #encrypt password
+            user_params[:password_digest] = BCrypt::Password.create(params["password_digest"])
             user = User.create(user_params)
             render json: user
         else
