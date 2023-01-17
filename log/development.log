@@ -735,3 +735,39 @@ Processing by BookingsController#create as */*
 Completed 200 OK in 36ms (Views: 11.4ms | ActiveRecord: 4.4ms | Allocations: 13460)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPasswordConfirmationToUsers (20230116083850)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230116083850"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:10:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:10:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/bookings_controller.rb:1:in `<main>'
+Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:11:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:10:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/bookings_controller.rb:1:in `<main>'
+Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:11:26 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10, "booking"=>{"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+  [1m[36mBooking Create (0.3ms)[0m  [1m[32mINSERT INTO "bookings" ("bus_id", "user_id", "isActive", "from_id", "to_id", "fare", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bus_id", 4], ["user_id", 1], ["isActive", 0], ["from_id", 2], ["to_id", 1], ["fare", 10], ["created_at", "2023-01-17 21:11:26.645593"], ["updated_at", "2023-01-17 21:11:26.645593"]]
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 29ms (Views: 3.7ms | ActiveRecord: 3.6ms | Allocations: 12794)
+
+
