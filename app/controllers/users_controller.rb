@@ -6,8 +6,12 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.create(user_params)
-        render json: user
+        if params["password_digest"] == params["confirmpassword"]
+            user = User.create(user_params)
+            render json: user
+        else
+            render json: {error: "Password does not match"}
+        end
     end
 
     def destroy
@@ -24,8 +28,8 @@ class UsersController < ApplicationController
     def find_user
         User.find_by(id: params[:id])
       end
-       
+
       def user_params
-        params.permit(:fullname, :phonenumber, :password, :password_confirmation)
+        params.permit(:fullname, :phonenumber, :password_digest)
       end
 end

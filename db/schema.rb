@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_12_130902) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_17_104601) do
   create_table "bookings", force: :cascade do |t|
     t.integer "bus_id"
     t.integer "user_id"
     t.boolean "isActive"
+    t.integer "from_id"
+    t.integer "to_id"
+    t.integer "fare"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

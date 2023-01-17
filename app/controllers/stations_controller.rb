@@ -1,5 +1,5 @@
 class StationsController < ApplicationController
-    
+
     def index
         stations = Station.all
         render json: stations
@@ -20,12 +20,27 @@ class StationsController < ApplicationController
            end
     end
 
+    def start
+        station = Station.all
+        render json: station
+    end
+
+    def end
+
+        if params["from"]
+            station = Station.where.not(station_name: params["from"])
+            render json: station
+        else
+            render json: {error: "Station not found"}, status: :not_found
+        end
+    end
+
     private
 
     def find_station
         Station.find_by(id: params[:id])
     end
-       
+
     def station_params
         params.permit(:station)
     end

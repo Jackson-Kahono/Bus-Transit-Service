@@ -28,13 +28,23 @@ class BookingsController < ApplicationController
         end
     end
 
+    def pay
+        booking = find_booking
+        if booking
+            booking.update(booking_params)
+            render json: booking
+        else
+            render json: {error: "Booking not found"}, status: :not_found
+        end
+    end
+
     private
 
     def find_booking
         Booking.find_by(id: params[:id])
       end
-       
+
       def booking_params
-        params.permit(:booking)
+        params.require(:booking).permit(:user_id, :bus_id, :from_id, :to_id, :fare)
       end
 end
