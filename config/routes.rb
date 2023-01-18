@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/end", to: "stations#end"
 
   post "/auth/login", to: "authentication#login"
+  post "auth/admin", to: "authentication#admin"
   post "/signup", to: "users#create"
   get "/auth/verify", to: "authentication#verify"
   post "/pay" , to: "bookings#pay"

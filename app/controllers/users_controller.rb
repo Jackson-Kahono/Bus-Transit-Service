@@ -8,11 +8,15 @@ class UsersController < ApplicationController
     def create
         if params["password_digest"] == params["confirmpassword"]
             #encrypt password
-            user_params[:password_digest] = BCrypt::Password.create(params["password_digest"])
-            user = User.create(user_params)
+            new_user = {
+                fullname: params["fullname"],
+                phonenumber: params["phonenumber"],
+                password_digest: BCrypt::Password.create(params["password_digest"])
+            }
+            user = User.create(new_user)
             render json: user
         else
-            render json: {error: "Password does not match"}
+            render json: {error: "Password does not match" }, status: :not_found
         end
     end
 

@@ -1,12 +1,9 @@
 class User < ApplicationRecord
-    has_secure_password
+  has_many :bookings
+  has_many :buses, through: :bookings
 
-    has_many :buses
-    has_many :buses, through: :bookings
-
-    def authenticate
-        #use BCrypt to authenticate
-        self.password_digest == BCrypt::Password.create(self.password)
-    end
-
+  def authenticate(pass)
+    #compare bcrypt password to the one in the database
+    BCrypt::Password.new(self.password_digest) == pass
+  end
 end

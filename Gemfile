@@ -40,6 +40,7 @@ gem "bootsnap", require: false
 # Use jwt and Bcrypt to authenticate users
 gem "bcrypt", "~> 3.1.7"
 gem "jwt", "~> 2.2.3"
+gem "rest-client", "~> 2.1.0"
 
 # cors
 gem "rack-cors", "~> 1.1.1"

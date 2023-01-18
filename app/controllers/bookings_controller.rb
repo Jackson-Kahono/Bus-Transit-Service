@@ -60,7 +60,10 @@ class BookingsController < ApplicationController
 
     fare = booking.fare
 
-    
+    booking.bus.update(passengers: booking.bus.passengers + 1)
+    booking.update(isActive: true)
+
+    render json: {booking: booking, phonenumber: phonenumber, fare: fare}
     #call stk push
 
     #if stk push success

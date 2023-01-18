@@ -81,16 +81,19 @@ stations.each { |station| Station.create(station) }
 #       t.string :password_digest
 
 users = [
-  {
-    fullname: "John Doe",
-    phonenumber: "0712345678",
-    password_digest: "vcxhgjkhj"
-  },
-  {
-    fullname: "Jane Doe",
-    phonenumber: "0712345678",
-    password_digest: "vcxhgjkhj"
-  },
+#   {
+#     "id": 3,
+#     "fullname": "lhjkgdhfx",
+#     "phonenumber": "0123456789",
+#     "password_digest": "$2a$12$AEuGaBoZGowIUk8W6NIDyOZOi8GCIwGaFdaXA3/8Ge3nG06vLvTHW",
+#     "isAdmin": false
+# }
+{
+  fullname: "lhjkgdhfx",
+  phonenumber: "0123456789",
+  password_digest: "$2a$12$AEuGaBoZGowIUk8W6NIDyOZOi8GCIwGaFdaXA3/8Ge3nG06vLvTHW",
+  isAdmin: true
+}
 ]
 
 puts " ⚡ creating users...."
