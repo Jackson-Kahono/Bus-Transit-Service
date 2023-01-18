@@ -92,8 +92,8 @@ class MpesasController < ApplicationController
 
     def generate_access_token_request
         @url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
-        @consumer_key = ENV['MPESA_CONSUMER_KEY']
-        @consumer_secret = ENV['MPESA_CONSUMER_SECRET']
+        @consumer_key = "AGm4Y7RgGsR7lGq8KBeaoTyJEYbOGt7A"
+        @consumer_secret = "XIjrAdzb8FAWPkvc"
         @userpass = Base64::strict_encode64("#{@consumer_key}:#{@consumer_secret}")
         headers = {
             Authorization: "Bearer #{@userpass}"

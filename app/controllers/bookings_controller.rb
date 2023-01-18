@@ -5,8 +5,33 @@ class BookingsController < ApplicationController
   end
 
   def create
-    booking = Booking.create(booking_params)
-    render json: booking
+    from = Station.find_by(station_name: booking_params[:from]).fare
+    to = Station.find_by(station_name: booking_params[:to]).fare
+
+    #find absolute difference
+    diff = (from - to).abs
+
+    #find time now + diff*10 minutes
+    time = Time.now + diff * 10 * 60
+
+
+
+    new_booking = {
+      bus_id: booking_params[:bus_id],
+      user_id: 1,
+      from_id: Station.find_by(station_name: booking_params[:from]).id,
+      to_id: Station.find_by(station_name: booking_params[:to]).id,
+      fare: diff * 10,
+      isActive: false,
+    }
+
+    booking = Booking.create(new_booking)
+    return render json: {
+      id: booking.id,
+      bus_name: booking.bus.bus_name,
+      fare: booking.fare,
+      time: time
+    }
   end
 
   def update
@@ -30,8 +55,12 @@ class BookingsController < ApplicationController
 
   def pay
     booking = find_booking
+
     phonenumber = booking.user.phonenumber
+
     fare = booking.fare
+
+    
     #call stk push
 
     #if stk push success
@@ -47,6 +76,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:user_id, :bus_id, :from_id, :to_id, :fare)
+    params.permit(:from,:to,:bus_id)
   end
 end
