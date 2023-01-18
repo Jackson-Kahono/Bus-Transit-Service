@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_16_083850) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_18_092254) do
+  create_table "access_tokens", force: :cascade do |t|
+    t.string "token"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "bookings", force: :cascade do |t|
     t.integer "bus_id"
     t.integer "user_id"
-    t.boolean "isActive"
+    t.boolean "isActive", default: false
+    t.integer "from_id"
+    t.integer "to_id"
+    t.integer "fare"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,6 +39,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_083850) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "station_id"
+  end
+
+  create_table "mpesas", force: :cascade do |t|
+    t.string "phoneNumber"
+    t.string "amount"
+    t.string "checkoutRequestID"
+    t.string "merchantRequestID"
+    t.string "mpesaReceiptNumber"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "payments", force: :cascade do |t|
@@ -52,6 +71,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_083850) do
     t.string "fullname"
     t.string "phonenumber"
     t.string "password_digest"
+    t.boolean "isAdmin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
