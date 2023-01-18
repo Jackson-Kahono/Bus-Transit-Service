@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_17_104601) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_18_092254) do
   create_table "access_tokens", force: :cascade do |t|
     t.string "token"
     t.datetime "created_at", null: false
@@ -71,6 +71,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_104601) do
     t.string "fullname"
     t.string "phonenumber"
     t.string "password_digest"
+    t.boolean "isAdmin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -40,6 +40,7 @@ gem "bootsnap", require: false
 # Use jwt and Bcrypt to authenticate users
 gem "bcrypt", "~> 3.1.7"
 gem "jwt", "~> 2.2.3"
+gem "rest-client", "~> 2.1.0"
 
 # cors
 gem "rack-cors", "~> 1.1.1"
@@ -61,8 +62,6 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
-  gem "bcrypt", "~> 3.1.7"
   gem "active_model_serializers", "~> 0.10.12"
 end
 

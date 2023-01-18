@@ -17,7 +17,15 @@ class BusesController < ApplicationController
       )
 
     #select buses where seats are greater than passengers
-    buses = buses.select { |bus| bus.seater > bus.passengers }
+    to_send_buses = []
+    buses.each do |bus|
+      puts bus.seater > bus.passengers
+
+      if bus.seater > bus.passengers
+        to_send_buses.push(bus)
+      end
+    end
+
 
     fare_from = Station.find_by(station_name: params_for_available[:from]).fare
     fare_to = Station.find_by(station_name: params_for_available[:to]).fare
@@ -28,7 +36,7 @@ class BusesController < ApplicationController
     #find time now + diff*10 minutes
     time = Time.now + diff * 10 * 60
 
-    render json: { buses: buses, time: time , fare: diff*10 }
+    render json: to_send_buses
   end
 
   def show

@@ -74,3 +74,29 @@ stations = [
 puts " ⚡ creating stations...."
 
 stations.each { |station| Station.create(station) }
+
+#users
+# t.string :fullname
+#       t.string :phonenumber
+#       t.string :password_digest
+
+users = [
+#   {
+#     "id": 3,
+#     "fullname": "lhjkgdhfx",
+#     "phonenumber": "0123456789",
+#     "password_digest": "$2a$12$AEuGaBoZGowIUk8W6NIDyOZOi8GCIwGaFdaXA3/8Ge3nG06vLvTHW",
+#     "isAdmin": false
+# }
+{
+  fullname: "lhjkgdhfx",
+  phonenumber: "0123456789",
+  password_digest: "$2a$12$AEuGaBoZGowIUk8W6NIDyOZOi8GCIwGaFdaXA3/8Ge3nG06vLvTHW",
+  isAdmin: true
+}
+]
+
+puts " ⚡ creating users...."
+
+users.each { |user| User.create(user) }
+
