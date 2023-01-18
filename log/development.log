@@ -1,7 +1,7 @@
-Started GET "/" for 127.0.0.1 at 2023-01-12 09:09:41 +0300
-  [1m[35m (61.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
-  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 102.68.77.231 at 2023-01-19 02:18:44 +0300
+  [1m[35m (510.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (254.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
 ActiveRecord::PendingMigrationError (
 
@@ -46,7 +46,7 @@ actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
 actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
 actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
 rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
 rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
 railties (7.0.4) lib/rails/engine.rb:530:in `call'
 puma (5.6.5) lib/puma/configuration.rb:252:in `call'
@@ -55,8 +55,8 @@ puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.5) lib/puma/server.rb:443:in `process_client'
 puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started GET "/favicon.ico" for 127.0.0.1 at 2023-01-12 09:09:43 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/favicon.ico" for 102.68.77.231 at 2023-01-19 02:18:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
 ActiveRecord::PendingMigrationError (
@@ -102,7 +102,7 @@ actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
 actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
 actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
 rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
 rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
 railties (7.0.4) lib/rails/engine.rb:530:in `call'
 puma (5.6.5) lib/puma/configuration.rb:252:in `call'
@@ -111,663 +111,143 @@ puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.5) lib/puma/server.rb:443:in `process_client'
 puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started GET "/" for ::1 at 2023-01-12 09:10:23 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-ActiveRecord::PendingMigrationError (
-
-Migrations are pending. To resolve this issue, run:
-
-        bin/rails db:migrate RAILS_ENV=development
-
-You have 2 pending migrations:
-
-20230111184527_create_mpesas.rb
-20230111184914_create_access_tokens.rb
-
-
-):
-  
-activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
-activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
-activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
-activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
-activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
-activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
-railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
-rack (2.2.5) lib/rack/runtime.rb:22:in `call'
-activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
-rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (7.0.4) lib/rails/engine.rb:530:in `call'
-puma (5.6.5) lib/puma/configuration.rb:252:in `call'
-puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
-puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
-puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
-puma (5.6.5) lib/puma/server.rb:443:in `process_client'
-puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started GET "/favicon.ico" for ::1 at 2023-01-12 09:10:23 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-ActiveRecord::PendingMigrationError (
-
-Migrations are pending. To resolve this issue, run:
-
-        bin/rails db:migrate RAILS_ENV=development
-
-You have 2 pending migrations:
-
-20230111184527_create_mpesas.rb
-20230111184914_create_access_tokens.rb
-
-
-):
-  
-activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
-activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
-activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
-activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
-activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
-activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
-railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
-rack (2.2.5) lib/rack/runtime.rb:22:in `call'
-activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
-rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (7.0.4) lib/rails/engine.rb:530:in `call'
-puma (5.6.5) lib/puma/configuration.rb:252:in `call'
-puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
-puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
-puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
-puma (5.6.5) lib/puma/server.rb:443:in `process_client'
-puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to CreateMpesas (20230111184527)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "mpesas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phoneNumber" varchar, "amount" varchar, "checkoutRequestID" varchar, "merchantRequestID" varchar, "mpesaReceiptNumber" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111184527"]]
-  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "mpesas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phoneNumber" varchar, "amount" varchar, "checkoutRequestID" varchar, "merchantRequestID" varchar, "mpesaReceiptNumber" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111184527"]]
+  [1m[36mTRANSACTION (222.5ms)[0m  [1m[36mcommit transaction[0m
 Migrating to CreateAccessTokens (20230111184914)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "access_tokens" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "token" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111184914"]]
-  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-12 06:11:10.598765"], ["updated_at", "2023-01-12 06:11:10.598765"]]
-  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/" for ::1 at 2023-01-12 09:11:30 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "access_tokens" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "token" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (10.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111184914"]]
+  [1m[36mTRANSACTION (204.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (12.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-18 23:21:30.392977"], ["updated_at", "2023-01-18 23:21:30.392977"]]
+  [1m[36mTRANSACTION (115.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 102.68.77.231 at 2023-01-19 02:21:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 32.6ms | Allocations: 459)
-Completed 200 OK in 244ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 4216)
+  Rendering /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 54.9ms | Allocations: 459)
+Completed 200 OK in 174ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 4216)
 
 
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 718c-197-254-109-178.in.ngrok.io
-Started GET "/" for 197.254.109.178 at 2023-01-12 09:30:57 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stkquery?%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 02:22:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/stkquery"):
+  
+Started POST "/stkquery?%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 02:22:25 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", " \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (146.7ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (71.7ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 23:22:30.828541"], ["updated_at", "2023-01-18 23:22:30.828541"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (906.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 200 OK in 6789ms (Views: 0.5ms | ActiveRecord: 1146.6ms | Allocations: 24776)
+
+
+Started GET "/" for 102.68.77.231 at 2023-01-19 02:24:09 +0300
 Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 727)
-Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 5846)
+  Rendering /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.2ms | Allocations: 451)
+Completed 200 OK in 33ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 1255)
 
 
-Started GET "/stkpush" for 197.254.109.178 at 2023-01-12 09:46:03 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 09:46:34 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 09:48:18 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 09:50:01 +0300
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 455)
-Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 1299)
-
-
-Started GET "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 11:35:23 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 727)
-Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 5886)
-
-
-Started GET "/" for 197.254.109.178 at 2023-01-12 11:36:33 +0300
+Started GET "/" for 102.68.77.231 at 2023-01-19 02:24:10 +0300
 Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 452)
-Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1262)
+  Rendering /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 16)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 261)
 
 
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 11:38:24 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started GET "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 11:38:48 +0300
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
-Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 342)
+Started POST "//stkquery?%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 02:26:25 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", " \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (10.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (35.3ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (120.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (46.1ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 23:26:27.027657"], ["updated_at", "2023-01-18 23:26:27.027657"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 200 OK in 2905ms (Views: 1.5ms | ActiveRecord: 328.5ms | Allocations: 9169)
 
 
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 11:42:38 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 11:43:07 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 11:49:06 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started GET "/?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 11:49:14 +0300
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
-Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 261)
+Started POST "/stkquery?%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 02:37:46 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", " \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (4.1ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mAccessToken Destroy (15.8ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (543.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mAccessToken Create (22.0ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 23:37:50.001640"], ["updated_at", "2023-01-18 23:37:50.001640"]]
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mTRANSACTION (494.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+Completed 200 OK in 3665ms (Views: 0.9ms | ActiveRecord: 1083.9ms | Allocations: 8694)
 
 
-Started POST "/?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 11:49:25 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 11:58:37 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:00:02 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started GET "/favicon.ico" for ::1 at 2023-01-12 12:00:41 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
-Started GET "/" for ::1 at 2023-01-12 12:00:45 +0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
-Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 252)
-
-
-Started GET "/" for 197.254.109.178 at 2023-01-12 12:03:23 +0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
-Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 252)
-
-
-Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:09:46 +0300
-  
-AbstractController::ActionNotFound (The action 'stkpush' could not be found for MpesasController):
-  
-actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
-actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
-actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
-rack (2.2.5) lib/rack/etag.rb:27:in `call'
-rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
-rack (2.2.5) lib/rack/head.rb:12:in `call'
-activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
-railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
-rack (2.2.5) lib/rack/runtime.rb:22:in `call'
-activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
-rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (7.0.4) lib/rails/engine.rb:530:in `call'
-puma (5.6.5) lib/puma/configuration.rb:252:in `call'
-puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
-puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
-puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
-puma (5.6.5) lib/puma/server.rb:443:in `process_client'
-puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:10:05 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:10:32 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:13:29 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:15:54 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:15:59 +0300
-  
-AbstractController::ActionNotFound (The action 'stkpush' could not be found for MpesasController):
-  
-actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
-actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
-actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
-rack (2.2.5) lib/rack/etag.rb:27:in `call'
-rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
-rack (2.2.5) lib/rack/head.rb:12:in `call'
-activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
-railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
-rack (2.2.5) lib/rack/runtime.rb:22:in `call'
-activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
-rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (7.0.4) lib/rails/engine.rb:530:in `call'
-puma (5.6.5) lib/puma/configuration.rb:252:in `call'
-puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
-puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
-puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
-puma (5.6.5) lib/puma/server.rb:443:in `process_client'
-puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:26:03 +0300
-  
-AbstractController::ActionNotFound (The action 'stkpush' could not be found for MpesasController):
-  
-actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
-actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
-actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
-actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
-actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
-rack (2.2.5) lib/rack/etag.rb:27:in `call'
-rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
-rack (2.2.5) lib/rack/head.rb:12:in `call'
-activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
-actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
-railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
-activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
-railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
-rack (2.2.5) lib/rack/runtime.rb:22:in `call'
-activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
-actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
-rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
-actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (7.0.4) lib/rails/engine.rb:530:in `call'
-puma (5.6.5) lib/puma/configuration.rb:252:in `call'
-puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
-puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
-puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
-puma (5.6.5) lib/puma/server.rb:443:in `process_client'
-puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-Started GET "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:26:09 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/stkpush"):
-  
-Started GET "/" for 197.254.109.178 at 2023-01-12 12:32:55 +0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 726)
-Completed 200 OK in 11ms (Views: 3.7ms | Allocations: 5825)
-
-
-Started GET "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:55:31 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 727)
-Completed 200 OK in 70ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 5886)
-
-
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 12:55:36 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (48.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started POST "/?%7B%20%22checkoutRequestID%22:%20%22ws_CO_12012023130056564718624359%22%20%7D" for 197.254.109.178 at 2023-01-12 13:23:57 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?%7B%20%22checkoutRequestID%22:%20%22ws_CO_12012023130056564718624359%22%20%7D" for 197.254.109.178 at 2023-01-12 13:31:24 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?%7B%20%22checkoutRequestID%22:%20%22ws_CO_12012023130056564718624359%22%20%7D" for 197.254.109.178 at 2023-01-12 13:34:10 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started GET "/?%7B%20%22checkoutRequestID%22:%20%22ws_CO_12012023130056564718624359%22%20%7D" for 197.254.109.178 at 2023-01-12 13:34:15 +0300
-Processing by Rails::WelcomeController#index as */*
-  Parameters: {"{ \"checkoutRequestID\": \"ws_CO_12012023130056564718624359\" }"=>nil}
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 25.2ms | Allocations: 455)
-Completed 200 OK in 27ms (Views: 26.4ms | Allocations: 1298)
-
-
-Started POST "/?%7B%20%22checkoutRequestID%22:%20%22ws_CO_12012023130056564718624359%22%20%7D" for 197.254.109.178 at 2023-01-12 13:34:30 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 13:36:08 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 13:36:24 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/"):
-  
-Started POST "/stkpush" for 54.86.50.139 at 2023-01-12 13:50:17 +0300
+Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 02:39:09 +0300
 Processing by MpesasController#stkpush as */*
-  [1m[36mAccessToken Load (0.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mAccessToken Create (99.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-12 10:50:20.612157"], ["updated_at", "2023-01-12 10:50:20.612157"]]
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mTRANSACTION (13.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-Completed 200 OK in 2426ms (Views: 0.5ms | ActiveRecord: 114.0ms | Allocations: 25308)
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", "{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (9.8ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mAccessToken Destroy (21.9ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (260.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mAccessToken Create (19.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 23:39:11.441936"], ["updated_at", "2023-01-18 23:39:11.441936"]]
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mTRANSACTION (295.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+Completed 200 OK in 2916ms (Views: 0.5ms | ActiveRecord: 607.2ms | Allocations: 7224)
 
 
-Started POST "/stkpush" for 54.86.50.139 at 2023-01-12 13:50:55 +0300
-Processing by MpesasController#stkpush as */*
-  [1m[36mAccessToken Load (0.5ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mAccessToken Destroy (30.1ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 1]]
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mAccessToken Create (0.9ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-12 10:50:56.458538"], ["updated_at", "2023-01-12 10:50:56.458538"]]
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-Completed 200 OK in 1444ms (Views: 0.1ms | ActiveRecord: 38.5ms | Allocations: 8607)
-
-
-Started POST "/stkpush/stkpush" for 197.254.109.178 at 2023-01-12 13:51:31 +0300
+Started GET "/stkquery?%7B%20%22checkoutRequestID%22:%20%22ws_CO_19012023023912848718624359%22%20%7D" for 102.68.77.231 at 2023-01-19 02:42:26 +0300
   
-ActionController::RoutingError (No route matches [POST] "/stkpush/stkpush"):
+ActionController::RoutingError (No route matches [GET] "/stkquery"):
   
-Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 13:52:23 +0300
-Processing by MpesasController#stkpush as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  [1m[36mAccessToken Load (0.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mAccessToken Destroy (1.3ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 2]]
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (25.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mAccessToken Create (0.9ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-12 10:52:24.384205"], ["updated_at", "2023-01-12 10:52:24.384205"]]
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mTRANSACTION (16.4ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-Completed 200 OK in 1686ms (Views: 0.1ms | ActiveRecord: 44.3ms | Allocations: 7095)
-
-
-Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%220718624359%22,%20%22amount%22:%20%221%22%20%7D" for 197.254.109.178 at 2023-01-12 13:55:03 +0300
-Processing by MpesasController#stkpush as */*
-  Parameters: {"{ \"phoneNumber\": \"0718624359\", \"amount\": \"1\" }"=>nil}
-  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mAccessToken Destroy (0.9ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 3]]
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mAccessToken Create (18.8ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-12 10:55:04.047809"], ["updated_at", "2023-01-12 10:55:04.047809"]]
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mTRANSACTION (25.9ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-Completed 200 OK in 1467ms (Views: 0.5ms | ActiveRecord: 50.5ms | Allocations: 7054)
-
-
-Started POST "/stkpush?{%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20}" for 54.86.50.139 at 2023-01-12 13:55:41 +0300
-Processing by MpesasController#stkpush as */*
-  Parameters: {"{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil}
-  [1m[36mAccessToken Load (0.7ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mAccessToken Destroy (26.2ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 4]]
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (18.9ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mAccessToken Create (229.9ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-12 10:55:42.356213"], ["updated_at", "2023-01-12 10:55:42.356213"]]
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-  [1m[36mTRANSACTION (74.2ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
-Completed 200 OK in 1688ms (Views: 0.1ms | ActiveRecord: 350.0ms | Allocations: 7120)
-
-
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to CreateBuses (20230111195814)
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "buses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "bus_name" varchar, "seater" integer, "passengers" integer, "status" varchar, "from" varchar, "to" varchar, "time" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111195814"]]
-  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateUsers (20230111200045)
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "phonenumber" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111200045"]]
-  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateStations (20230111200310)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "stations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "station_name" varchar, "fare" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111200310"]]
-  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreatePayments (20230111200431)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "payments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "amount" integer, "transaction_id" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230111200431"]]
-  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
-Migrating to AddStationIdToBuses (20230112074156)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "buses" ADD "station_id" integer[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230112074156"]]
-  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
-Migrating to AddBookingIdToPayments (20230112130902)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "payments" ADD "booking_id" integer[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230112130902"]]
-  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateBookings (20230117104601)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "bus_id" integer, "user_id" integer, "isActive" boolean DEFAULT 0, "from_id" integer, "to_id" integer, "fare" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230117104601"]]
-  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:08:23 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by BookingsController#create as */*
-  Parameters: {"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10, "booking"=>{"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10}}
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("bus_id", "user_id", "isActive", "from_id", "to_id", "fare", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bus_id", 4], ["user_id", 1], ["isActive", 0], ["from_id", 2], ["to_id", 1], ["fare", 10], ["created_at", "2023-01-17 21:08:23.847736"], ["updated_at", "2023-01-17 21:08:23.847736"]]
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (2.6ms)
-Completed 200 OK in 36ms (Views: 11.4ms | ActiveRecord: 4.4ms | Allocations: 13460)
-
-
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddPasswordConfirmationToUsers (20230116083850)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230116083850"]]
-  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:10:23 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
-  
-app/controllers/application_controller.rb:10:in `<class:ApplicationController>'
-app/controllers/application_controller.rb:1:in `<main>'
-app/controllers/bookings_controller.rb:1:in `<main>'
-Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:11:14 +0300
-  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
-  
-app/controllers/application_controller.rb:10:in `<class:ApplicationController>'
-app/controllers/application_controller.rb:1:in `<main>'
-app/controllers/bookings_controller.rb:1:in `<main>'
-Started POST "/bookings" for 127.0.0.1 at 2023-01-18 00:11:26 +0300
-Processing by BookingsController#create as */*
-  Parameters: {"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10, "booking"=>{"bus_id"=>4, "user_id"=>1, "from_id"=>2, "to_id"=>1, "fare"=>10}}
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-  [1m[36mBooking Create (0.3ms)[0m  [1m[32mINSERT INTO "bookings" ("bus_id", "user_id", "isActive", "from_id", "to_id", "fare", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bus_id", 4], ["user_id", 1], ["isActive", 0], ["from_id", 2], ["to_id", 1], ["fare", 10], ["created_at", "2023-01-17 21:11:26.645593"], ["updated_at", "2023-01-17 21:11:26.645593"]]
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/bookings_controller.rb:8:in `create'
-[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
-Completed 200 OK in 29ms (Views: 3.7ms | ActiveRecord: 3.6ms | Allocations: 12794)
+Started POST "/stkquery?%7B%20%22checkoutRequestID%22:%20%22ws_CO_19012023023912848718624359%22%20%7D" for 102.68.77.231 at 2023-01-19 02:42:35 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"checkoutRequestID"=>"ws_CO_19012023023912848718624359", "{ \"checkoutRequestID\": \"ws_CO_19012023023912848718624359\" }"=>nil, "mpesa"=>{"checkoutRequestID"=>"ws_CO_19012023023912848718624359"}}
+  [1m[36mAccessToken Load (10.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mAccessToken Destroy (18.9ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (136.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mAccessToken Create (15.1ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 23:42:37.562656"], ["updated_at", "2023-01-18 23:42:37.562656"]]
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mTRANSACTION (101.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+Completed 200 OK in 3132ms (Views: 1.1ms | ActiveRecord: 282.6ms | Allocations: 7146)
 
 

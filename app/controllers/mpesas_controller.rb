@@ -88,6 +88,8 @@ class MpesasController < ApplicationController
         render json: response
     end
 
+    #generate and get access token from the authorized API
+
     private
 
     def generate_access_token_request
@@ -104,6 +106,8 @@ class MpesasController < ApplicationController
         res
     end
 
+
+    #Access token
     def get_access_token
         res = generate_access_token_request()
         if res.code != 200
