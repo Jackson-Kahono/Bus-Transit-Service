@@ -26218,6 +26218,7 @@ Processing by StationsController#start as */*
 Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 4463)
 
 
+<<<<<<< HEAD
 Started GET "/start" for 127.0.0.1 at 2023-01-18 13:01:48 +0300
 Processing by StationsController#start as */*
   [1m[36mStation Load (0.8ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
@@ -28219,10 +28220,416 @@ Processing by BookingsController#create as */*
   [1m[36mCACHE Station Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Roysambu"], ["LIMIT", 1]]
   ↳ app/controllers/bookings_controller.rb:22:in `create'
 [31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f63b54d8558>, params: {"from"=>"Roysambu", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+=======
+Started GET "/start" for ::1 at 2023-01-18 15:18:35 +0300
+Started GET "/start" for ::1 at 2023-01-18 15:18:35 +0300
+Started GET "/start" for ::1 at 2023-01-18 15:18:35 +0300
+Started GET "/start" for ::1 at 2023-01-18 15:18:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (12.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StationsController#start as */*
+Processing by StationsController#start as */*
+Processing by StationsController#start as */*
+Processing by StationsController#start as */*
+  [1m[36mStation Load (34.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  [1m[36mStation Load (12.6ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  [1m[36mStation Load (16.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  [1m[36mStation Load (14.8ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.33ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (109.47ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (224.3ms)
+Completed 200 OK in 6012ms (Views: 3627.7ms | ActiveRecord: 177.4ms | Allocations: 45279)
+
+
+Completed 200 OK in 5771ms (Views: 3586.7ms | ActiveRecord: 49.8ms | Allocations: 44370)
+
+
+Completed 200 OK in 5899ms (Views: 3516.2ms | ActiveRecord: 157.5ms | Allocations: 44753)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (356.11ms)
+Completed 200 OK in 6083ms (Views: 3923.6ms | ActiveRecord: 64.8ms | Allocations: 45410)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:21:02 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (3.7ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.11ms)
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 3.7ms | Allocations: 4446)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:21:03 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (7.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.98ms)
+Completed 200 OK in 90ms (Views: 81.0ms | ActiveRecord: 7.9ms | Allocations: 4433)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:21:03 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (4.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (64.89ms)
+Completed 200 OK in 2091ms (Views: 2084.1ms | ActiveRecord: 4.9ms | Allocations: 4438)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:21:06 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (3.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.47ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 3.4ms | Allocations: 4433)
+
+
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:21:23 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c09b888>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c09b888>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (77.7ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c09b888>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (43.7ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c09b888>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (5.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 1465ms (Views: 43.6ms | ActiveRecord: 135.5ms | Allocations: 7097)
+
+
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:21:26 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8f2148>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8f2148>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (7.4ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8f2148>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (3.6ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8f2148>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (2.5ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.11ms)
+Completed 200 OK in 36ms (Views: 3.9ms | ActiveRecord: 13.6ms | Allocations: 2085)
+
+
+Started POST "/bookings" for ::1 at 2023-01-18 15:21:29 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku", "booking"=>{}}
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f198c962420>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (5.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f198c962420>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (5.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:9:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f198c962420>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f198c962420>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mCACHE Station Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:22:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f198c962420>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mCACHE Station Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:23:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+  [1m[36mUser Load (32.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 1241ms (ActiveRecord: 70.0ms | Allocations: 43942)
+
+
+  
+NoMethodError (undefined method `bus_name' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:31:in `create'
+Started POST "/pay" for ::1 at 2023-01-18 15:21:33 +0300
+Processing by BookingsController#pay as */*
+  Parameters: {"booking"=>{}}
+  [1m[36mBooking Load (5.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:78:in `find_booking'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 5.7ms | Allocations: 1553)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:59:in `pay'
+Started POST "/stkpush" for ::1 at 2023-01-18 15:21:34 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"mpesa"=>{}}
+Started POST "/pay" for ::1 at 2023-01-18 15:21:36 +0300
+Processing by BookingsController#pay as */*
+  Parameters: {"booking"=>{}}
+  [1m[36mBooking Load (3.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:78:in `find_booking'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.4ms | Allocations: 1441)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:59:in `pay'
+Started POST "/stkpush" for ::1 at 2023-01-18 15:21:36 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"mpesa"=>{}}
+  [1m[36mAccessToken Load (46.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  [1m[36mAccessToken Load (6.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (386.4ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 1]]
+  [1m[36mAccessToken Destroy (5396.7ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (581.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+Completed 500 Internal Server Error in 11564ms (ActiveRecord: 5478.3ms | Allocations: 45526)
+
+
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/mpesas_controller.rb:117:in `get_access_token'
+app/controllers/mpesas_controller.rb:29:in `stkpush'
+  [1m[36mAccessToken Create (41.7ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 12:21:47.085722"], ["updated_at", "2023-01-18 12:21:47.085722"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (280.9ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/pay" for ::1 at 2023-01-18 15:21:47 +0300
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Started POST "/pay" for ::1 at 2023-01-18 15:21:47 +0300
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:21:48 +0300
+Processing by BookingsController#pay as */*
+  Parameters: {"booking"=>{}}
+  [1m[36mBooking Load (4.9ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:78:in `find_booking'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 4.9ms | Allocations: 1416)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:59:in `pay'
+Processing by BookingsController#pay as */*
+  Parameters: {"booking"=>{}}
+  [1m[36mBooking Load (4.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:78:in `find_booking'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 4.2ms | Allocations: 1409)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:59:in `pay'
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c2ae968>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c2ae968>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (8.1ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c2ae968>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (7.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f197c2ae968>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (4.5ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 54ms (Views: 2.5ms | ActiveRecord: 19.8ms | Allocations: 2101)
+
+
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:21:48 +0300
+Completed 500 Internal Server Error in 11910ms (ActiveRecord: 1296.9ms | Allocations: 100926)
+
+
+  
+RuntimeError (Invalid response {
+                    "requestId":"2508-16867668-1",
+                    "errorCode": "404.001.03",
+                    "errorMessage": "Invalid Access Token"
+                }
+             received.):
+  
+app/controllers/mpesas_controller.rb:46:in `block in stkpush'
+app/controllers/mpesas_controller.rb:37:in `stkpush'
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1974a48cd0>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1974a48cd0>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (6.9ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1974a48cd0>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (4.8ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1974a48cd0>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (4.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 56ms (Views: 3.5ms | ActiveRecord: 16.1ms | Allocations: 2159)
+
+
+Started POST "/stkpush" for ::1 at 2023-01-18 15:21:53 +0300
+Started POST "/stkpush" for ::1 at 2023-01-18 15:21:53 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"mpesa"=>{}}
+Processing by MpesasController#stkpush as */*
+  Parameters: {"mpesa"=>{}}
+  [1m[36mAccessToken Load (5.5ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (28.9ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (503.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAccessToken Load (11.0ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (16.0ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 12:21:55.522784"], ["updated_at", "2023-01-18 12:21:55.522784"]]
+  [1m[36mAccessToken Create (5337.7ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 12:21:55.529959"], ["updated_at", "2023-01-18 12:21:55.529959"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (485.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 500 Internal Server Error in 7601ms (ActiveRecord: 5349.1ms | Allocations: 10311)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/mpesas_controller.rb:118:in `get_access_token'
+app/controllers/mpesas_controller.rb:29:in `stkpush'
+Completed 500 Internal Server Error in 8693ms (ActiveRecord: 1040.7ms | Allocations: 51961)
+
+
+  
+RuntimeError (Invalid response {
+                    "requestId":"25142-147743037-2",
+                    "errorCode": "404.001.03",
+                    "errorMessage": "Invalid Access Token"
+                }
+             received.):
+  
+app/controllers/mpesas_controller.rb:46:in `block in stkpush'
+app/controllers/mpesas_controller.rb:37:in `stkpush'
+Started POST "/users" for ::1 at 2023-01-18 15:23:33 +0300
+Processing by UsersController#create as */*
+  Parameters: {"fullname"=>"DevShee", "phonenumber"=>"254742258845", "password_digest"=>"[FILTERED]", "confirmpassword"=>"[FILTERED]", "user"=>{"fullname"=>"DevShee", "phonenumber"=>"254742258845", "password_digest"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (5.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."fullname" = ? LIMIT ?[0m  [["fullname", "DevShee"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (19.7ms)[0m  [1m[32mINSERT INTO "users" ("fullname", "phonenumber", "password_digest", "isAdmin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["fullname", "DevShee"], ["phonenumber", "254742258845"], ["password_digest", "[FILTERED]"], ["isAdmin", 0], ["created_at", "2023-01-18 12:23:36.130598"], ["updated_at", "2023-01-18 12:23:36.130598"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (265.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.67ms)
+Completed 200 OK in 2119ms (Views: 152.0ms | ActiveRecord: 291.6ms | Allocations: 4163)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:23:38 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (8.7ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.66ms)
+Completed 200 OK in 88ms (Views: 78.0ms | ActiveRecord: 8.7ms | Allocations: 4434)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:23:39 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (5.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.13ms)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 5.4ms | Allocations: 4433)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:23:39 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (10.0ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.21ms)
+Completed 200 OK in 62ms (Views: 51.1ms | ActiveRecord: 10.0ms | Allocations: 4433)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:23:40 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (5.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.06ms)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 5.3ms | Allocations: 4433)
+
+
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:23:50 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988d16728>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988d16728>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (5.3ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988d16728>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (4.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988d16728>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (42.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 79ms (Views: 3.3ms | ActiveRecord: 51.7ms | Allocations: 2085)
+
+
+Started GET "/available?from=allssops&to=Ku" for ::1 at 2023-01-18 15:23:50 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988dc2d70>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988dc2d70>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (4.8ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ku"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988dc2d70>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (3.6ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f1988dc2d70>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (6.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 49ms (Views: 2.9ms | ActiveRecord: 15.2ms | Allocations: 2085)
+
+
+Started POST "/bookings" for ::1 at 2023-01-18 15:23:52 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ku", "booking"=>{}}
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f1980c48a88>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (5.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f1980c48a88>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (37.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:9:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f1980c48a88>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f1980c48a88>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mCACHE Station Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:22:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f1980c48a88>, params: {"from"=>"allssops", "to"=>"Ku", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+>>>>>>> a37e901378d2d3b2ca85a8fba5cb72207220ae57
   [1m[36mCACHE Station Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ku"], ["LIMIT", 1]]
   ↳ app/controllers/bookings_controller.rb:23:in `create'
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
   ↳ app/controllers/bookings_controller.rb:28:in `create'
+<<<<<<< HEAD
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/bookings_controller.rb:28:in `create'
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
@@ -28270,11 +28677,58 @@ Processing by MpesasController#stkpush as */*
   [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
   ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
 Completed 500 Internal Server Error in 1301ms (ActiveRecord: 6.8ms | Allocations: 6844)
+=======
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 47.4ms | Allocations: 5307)
+
+
+  
+NoMethodError (undefined method `bus_name' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:31:in `create'
+Started POST "/pay" for ::1 at 2023-01-18 15:23:53 +0300
+Processing by BookingsController#pay as */*
+  Parameters: {"booking"=>{}}
+  [1m[36mBooking Load (4.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:78:in `find_booking'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 4.5ms | Allocations: 1395)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:59:in `pay'
+Started POST "/stkpush" for ::1 at 2023-01-18 15:23:54 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"mpesa"=>{}}
+  [1m[36mAccessToken Load (5.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (19.2ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (182.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (45.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-18 12:23:56.508729"], ["updated_at", "2023-01-18 12:23:56.508729"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (197.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 500 Internal Server Error in 2953ms (ActiveRecord: 452.8ms | Allocations: 7578)
+>>>>>>> a37e901378d2d3b2ca85a8fba5cb72207220ae57
 
 
   
 RuntimeError (Invalid response {
+<<<<<<< HEAD
                     "requestId":"5475-195107700-1",
+=======
+                    "requestId":"32582-199571435-2",
+>>>>>>> a37e901378d2d3b2ca85a8fba5cb72207220ae57
                     "errorCode": "404.001.03",
                     "errorMessage": "Invalid Access Token"
                 }
@@ -28282,6 +28736,7 @@ RuntimeError (Invalid response {
   
 app/controllers/mpesas_controller.rb:46:in `block in stkpush'
 app/controllers/mpesas_controller.rb:37:in `stkpush'
+<<<<<<< HEAD
 Started GET "/" for 197.232.128.93 at 2023-01-19 10:18:36 +0300
 Cannot render console from 197.232.128.93! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -32327,3 +32782,155 @@ Migrating to CreateUsers (20230118092254)
   [1m[36mUser Exists? (299.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."fullname" = $1 LIMIT $2[0m  [["fullname", "lhjkgdhfx"], ["LIMIT", 1]]
   [1m[36mUser Create (264.7ms)[0m  [1m[32mINSERT INTO "users" ("fullname", "phonenumber", "password_digest", "isAdmin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["fullname", "lhjkgdhfx"], ["phonenumber", "0123456789"], ["password_digest", "[FILTERED]"], ["isAdmin", true], ["created_at", "2023-01-19 15:19:00.380298"], ["updated_at", "2023-01-19 15:19:00.380298"]]
   [1m[36mTRANSACTION (348.2ms)[0m  [1m[35mCOMMIT[0m
+=======
+Started GET "/start" for ::1 at 2023-01-18 15:24:28 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (4.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.43ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 4.4ms | Allocations: 4432)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:24:28 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (6.0ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.49ms)
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 6.0ms | Allocations: 4434)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:24:29 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (63.7ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.51ms)
+Completed 200 OK in 93ms (Views: 28.4ms | ActiveRecord: 63.7ms | Allocations: 4433)
+
+
+Started GET "/start" for ::1 at 2023-01-18 15:24:29 +0300
+Processing by StationsController#start as */*
+  [1m[36mStation Load (4.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations"[0m
+  ↳ app/controllers/stations_controller.rb:25:in `start'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.67ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 4.3ms | Allocations: 4433)
+
+
+Started GET "/available?from=allssops&to=Ruiru-bypass" for ::1 at 2023-01-18 15:29:50 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ruiru-bypass"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8e1258>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8e1258>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (4.3ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ruiru-bypass"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8e1258>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (11.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c8e1258>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (8.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ruiru-bypass"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 70ms (Views: 5.6ms | ActiveRecord: 23.8ms | Allocations: 2088)
+
+
+Started GET "/available?from=allssops&to=Ruiru-bypass" for ::1 at 2023-01-18 15:29:50 +0300
+Processing by BusesController#available as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ruiru-bypass"}
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c978310>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c978310>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mBus Load (4.4ms)[0m  [1m[34mSELECT "buses".* FROM "buses" WHERE "buses"."from" = ? AND "buses"."to" = ?[0m  [["from", "allssops"], ["to", "Ruiru-bypass"]]
+  ↳ app/controllers/buses_controller.rb:21:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c978310>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (9.4ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:30:in `available'
+[31mUnpermitted parameters: :from, :to. Context: { controller: BusesController, action: available, request: #<ActionDispatch::Request:0x00007f198c978310>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"buses", "action"=>"available"} }[0m
+  [1m[36mStation Load (7.5ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ruiru-bypass"], ["LIMIT", 1]]
+  ↳ app/controllers/buses_controller.rb:31:in `available'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 78ms (Views: 6.9ms | ActiveRecord: 21.2ms | Allocations: 2086)
+
+
+Started POST "/bookings" for ::1 at 2023-01-18 15:29:55 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"from"=>"allssops", "to"=>"Ruiru-bypass", "booking"=>{}}
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f19744d6040>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (4.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f19744d6040>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mStation Load (12.9ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ruiru-bypass"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:9:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f19744d6040>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f19744d6040>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mCACHE Station Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "allssops"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:22:in `create'
+[31mUnpermitted parameter: :booking. Context: { controller: BookingsController, action: create, request: #<ActionDispatch::Request:0x00007f19744d6040>, params: {"from"=>"allssops", "to"=>"Ruiru-bypass", "controller"=>"bookings", "action"=>"create", "booking"=>{}} }[0m
+  [1m[36mCACHE Station Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."station_name" = ? LIMIT ?[0m  [["station_name", "Ruiru-bypass"], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:23:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookings_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 24.4ms | Allocations: 5269)
+
+
+  
+NoMethodError (undefined method `bus_name' for nil:NilClass):
+  
+app/controllers/bookings_controller.rb:31:in `create'
+Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 03:05:18 +0300
+Cannot render console from 102.68.77.231! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", "{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (3.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (52.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (155.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (20.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-19 00:05:25.843254"], ["updated_at", "2023-01-19 00:05:25.843254"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (163.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 500 Internal Server Error in 3139ms (ActiveRecord: 416.1ms | Allocations: 30278)
+
+
+  
+RuntimeError (Invalid response {
+                    "requestId":"74591-31695965-2",
+                    "errorCode": "404.001.03",
+                    "errorMessage": "Invalid Access Token"
+                }
+             received.):
+  
+app/controllers/mpesas_controller.rb:46:in `block in stkpush'
+app/controllers/mpesas_controller.rb:37:in `stkpush'
+Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 03:15:36 +0300
+Cannot render console from 102.68.77.231! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", "{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (4.0ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mAccessToken Destroy (14.3ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (142.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mAccessToken Create (22.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-19 00:15:40.497753"], ["updated_at", "2023-01-19 00:15:40.497753"]]
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mTRANSACTION (266.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+No serializer found for resource: :success
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.48ms)
+Completed 200 OK in 4688ms (Views: 95.3ms | ActiveRecord: 457.5ms | Allocations: 11862)
+
+
+>>>>>>> a37e901378d2d3b2ca85a8fba5cb72207220ae57
