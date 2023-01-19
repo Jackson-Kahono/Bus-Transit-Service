@@ -26773,3 +26773,58 @@ Completed 500 Internal Server Error in 127ms (ActiveRecord: 24.4ms | Allocations
 NoMethodError (undefined method `bus_name' for nil:NilClass):
   
 app/controllers/bookings_controller.rb:31:in `create'
+Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 03:05:18 +0300
+Cannot render console from 102.68.77.231! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", "{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (3.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mAccessToken Destroy (52.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (155.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:117:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Create (20.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-19 00:05:25.843254"], ["updated_at", "2023-01-19 00:05:25.843254"]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (163.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+Completed 500 Internal Server Error in 3139ms (ActiveRecord: 416.1ms | Allocations: 30278)
+
+
+  
+RuntimeError (Invalid response {
+                    "requestId":"74591-31695965-2",
+                    "errorCode": "404.001.03",
+                    "errorMessage": "Invalid Access Token"
+                }
+             received.):
+  
+app/controllers/mpesas_controller.rb:46:in `block in stkpush'
+app/controllers/mpesas_controller.rb:37:in `stkpush'
+Started POST "/stkpush?%7B%20%22phoneNumber%22:%20%22254718624359%22,%20%22amount%22:%20%221%22%20%7D" for 102.68.77.231 at 2023-01-19 03:15:36 +0300
+Cannot render console from 102.68.77.231! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254718624359", "amount"=>"1", "{ \"phoneNumber\": \"254718624359\", \"amount\": \"1\" }"=>nil, "mpesa"=>{"phoneNumber"=>"254718624359", "amount"=>"1"}}
+  [1m[36mAccessToken Load (4.0ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mAccessToken Destroy (14.3ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (142.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:121:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mAccessToken Create (22.5ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "[FILTERED]"], ["created_at", "2023-01-19 00:15:40.497753"], ["updated_at", "2023-01-19 00:15:40.497753"]]
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+  [1m[36mTRANSACTION (266.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:122:in `get_access_token'
+No serializer found for resource: :success
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.48ms)
+Completed 200 OK in 4688ms (Views: 95.3ms | ActiveRecord: 457.5ms | Allocations: 11862)
+
+
