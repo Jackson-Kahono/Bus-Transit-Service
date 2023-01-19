@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  post "/stkpush", to: "mpesas#stkpush"
-  post "/stkquery", to: "mpesas#stkquery"
+  post "stkpush", to: "mpesas#stkpush"
+  post "stkquery", to: "mpesas#stkquery"
 
 
 end
