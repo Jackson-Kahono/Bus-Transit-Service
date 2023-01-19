@@ -32934,3 +32934,70 @@ Completed 200 OK in 4688ms (Views: 95.3ms | ActiveRecord: 457.5ms | Allocations:
 
 
 >>>>>>> a37e901378d2d3b2ca85a8fba5cb72207220ae57
+  [1m[36mActiveRecord::SchemaMigration Pluck (302.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (271.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (269.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (265.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (270.0ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Toxic"], ["seater", 40], ["passengers", 0], ["status", "Empty"], ["from", "Juja"], ["to", "Ruiru"], ["time", "8:00am"], ["created_at", "2023-01-19 17:52:28.481223"], ["updated_at", "2023-01-19 17:52:28.481223"], ["station_id", nil]]
+  [1m[36mTRANSACTION (297.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (306.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (267.3ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Batman"], ["seater", 60], ["passengers", 0], ["status", "Half-empty"], ["from", "CBD"], ["to", "Thika"], ["time", "1:00pm"], ["created_at", "2023-01-19 17:52:29.324985"], ["updated_at", "2023-01-19 17:52:29.324985"], ["station_id", nil]]
+  [1m[36mTRANSACTION (338.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (264.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (347.7ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Kingkong"], ["seater", 25], ["passengers", 0], ["status", "2 seats"], ["from", "KU"], ["to", "Juja"], ["time", "6:00am"], ["created_at", "2023-01-19 17:52:30.247280"], ["updated_at", "2023-01-19 17:52:30.247280"], ["station_id", nil]]
+  [1m[36mTRANSACTION (265.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (286.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (355.7ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Mixtape"], ["seater", 70], ["passengers", 0], ["status", "Empty"], ["from", "Roysambu"], ["to", "CBD"], ["time", "8:00pm"], ["created_at", "2023-01-19 17:52:31.132245"], ["updated_at", "2023-01-19 17:52:31.132245"], ["station_id", nil]]
+  [1m[36mTRANSACTION (267.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (264.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (264.8ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Sugar"], ["seater", 10], ["passengers", 0], ["status", "Empty"], ["from", "Juja"], ["to", "CBD"], ["time", "9:00am"], ["created_at", "2023-01-19 17:52:32.054316"], ["updated_at", "2023-01-19 17:52:32.054316"], ["station_id", nil]]
+  [1m[36mTRANSACTION (267.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (268.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (266.5ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Mango"], ["seater", 30], ["passengers", 0], ["status", "Empty"], ["from", "Ruiru"], ["to", "Githurai"], ["time", "10:00am"], ["created_at", "2023-01-19 17:52:32.860345"], ["updated_at", "2023-01-19 17:52:32.860345"], ["station_id", nil]]
+  [1m[36mTRANSACTION (265.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (263.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (339.3ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Damager"], ["seater", 50], ["passengers", 0], ["status", "Empty"], ["from", "Githurai"], ["to", "CBD"], ["time", "11:00am"], ["created_at", "2023-01-19 17:52:33.671582"], ["updated_at", "2023-01-19 17:52:33.671582"], ["station_id", nil]]
+  [1m[36mTRANSACTION (362.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (264.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (323.9ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Mango"], ["seater", 30], ["passengers", 0], ["status", "Empty"], ["from", "Ruiru"], ["to", "Githurai"], ["time", "10:00am"], ["created_at", "2023-01-19 17:52:34.649075"], ["updated_at", "2023-01-19 17:52:34.649075"], ["station_id", nil]]
+  [1m[36mTRANSACTION (267.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (264.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (270.7ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Mario"], ["seater", 50], ["passengers", 0], ["status", "Empty"], ["from", "allssops"], ["to", "CBD"], ["time", "11:00am"], ["created_at", "2023-01-19 17:52:35.514433"], ["updated_at", "2023-01-19 17:52:35.514433"], ["station_id", nil]]
+  [1m[36mTRANSACTION (266.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (265.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBus Create (268.5ms)[0m  [1m[32mINSERT INTO "buses" ("bus_name", "seater", "passengers", "status", "from", "to", "time", "created_at", "updated_at", "station_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["bus_name", "Melon"], ["seater", 30], ["passengers", 0], ["status", "Empty"], ["from", "Ruiru"], ["to", "Githurai"], ["time", "10:00am"], ["created_at", "2023-01-19 17:52:36.327380"], ["updated_at", "2023-01-19 17:52:36.327380"], ["station_id", nil]]
+  [1m[36mTRANSACTION (265.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (282.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (275.4ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "CBD"], ["fare", 0], ["created_at", "2023-01-19 17:52:37.691031"], ["updated_at", "2023-01-19 17:52:37.691031"]]
+  [1m[36mTRANSACTION (303.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (281.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (264.4ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "allssops"], ["fare", 1], ["created_at", "2023-01-19 17:52:38.562946"], ["updated_at", "2023-01-19 17:52:38.562946"]]
+  [1m[36mTRANSACTION (343.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (301.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (303.6ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Roysambu"], ["fare", 2], ["created_at", "2023-01-19 17:52:39.463954"], ["updated_at", "2023-01-19 17:52:39.463954"]]
+  [1m[36mTRANSACTION (308.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (276.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (300.0ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Githurai"], ["fare", 3], ["created_at", "2023-01-19 17:52:40.393183"], ["updated_at", "2023-01-19 17:52:40.393183"]]
+  [1m[36mTRANSACTION (291.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (272.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (264.6ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Ku"], ["fare", 4], ["created_at", "2023-01-19 17:52:41.317150"], ["updated_at", "2023-01-19 17:52:41.317150"]]
+  [1m[36mTRANSACTION (265.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (266.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (265.8ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Ruiru-bypass"], ["fare", 5], ["created_at", "2023-01-19 17:52:42.177864"], ["updated_at", "2023-01-19 17:52:42.177864"]]
+  [1m[36mTRANSACTION (265.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (266.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (359.6ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Ruiru"], ["fare", 6], ["created_at", "2023-01-19 17:52:43.026025"], ["updated_at", "2023-01-19 17:52:43.026025"]]
+  [1m[36mTRANSACTION (295.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (304.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (300.9ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Juja"], ["fare", 7], ["created_at", "2023-01-19 17:52:43.966733"], ["updated_at", "2023-01-19 17:52:43.966733"]]
+  [1m[36mTRANSACTION (304.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (269.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (265.0ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Juja"], ["fare", 8], ["created_at", "2023-01-19 17:52:44.891018"], ["updated_at", "2023-01-19 17:52:44.891018"]]
+  [1m[36mTRANSACTION (266.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (309.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStation Create (264.1ms)[0m  [1m[32mINSERT INTO "stations" ("station_name", "fare", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["station_name", "Thika"], ["fare", 9], ["created_at", "2023-01-19 17:52:45.702798"], ["updated_at", "2023-01-19 17:52:45.702798"]]
+  [1m[36mTRANSACTION (265.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (323.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (267.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."fullname" = $1 LIMIT $2[0m  [["fullname", "lhjkgdhfx"], ["LIMIT", 1]]
+  [1m[36mUser Create (343.0ms)[0m  [1m[32mINSERT INTO "users" ("fullname", "phonenumber", "password_digest", "isAdmin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["fullname", "lhjkgdhfx"], ["phonenumber", "0123456789"], ["password_digest", "[FILTERED]"], ["isAdmin", true], ["created_at", "2023-01-19 17:52:47.720283"], ["updated_at", "2023-01-19 17:52:47.720283"]]
+  [1m[36mTRANSACTION (298.7ms)[0m  [1m[35mCOMMIT[0m

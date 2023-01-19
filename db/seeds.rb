@@ -51,6 +51,51 @@ buses = [
     from: "Juja",
     to: "CBD",
     time: "9:00am"
+  },
+  {
+    bus_name: "Mango",
+    seater: 30,
+    passengers: 0,
+    status: "Empty",
+    from: "Ruiru",
+    to: "Githurai",
+    time: "10:00am"
+  },
+  {
+    bus_name: "Damager",
+    seater: 50,
+    passengers: 0,
+    status: "Empty",
+    from: "Githurai",
+    to: "CBD",
+    time: "11:00am"
+  },
+  {
+    bus_name: "Mango",
+    seater: 30,
+    passengers: 0,
+    status: "Empty",
+    from: "Ruiru",
+    to: "Githurai",
+    time: "10:00am"
+  },
+  {
+    bus_name: "Mario",
+    seater: 50,
+    passengers: 0,
+    status: "Empty",
+    from: "allssops",
+    to: "CBD",
+    time: "11:00am"
+  },
+  {
+    bus_name: "Melon",
+    seater: 30,
+    passengers: 0,
+    status: "Empty",
+    from: "Ruiru",
+    to: "Githurai",
+    time: "10:00am"
   }
 ]
 
