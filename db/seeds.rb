@@ -10,7 +10,7 @@ buses = [
   {
     bus_name: "Toxic",
     seater: 40,
-    passengers: 40,
+    passengers: 0,
     status: "Empty",
     from: "Juja",
     to: "Ruiru",
@@ -19,7 +19,7 @@ buses = [
   {
     bus_name: "Batman",
     seater: 60,
-    passengers: 60,
+    passengers: 0,
     status: "Half-empty",
     from: "CBD",
     to: "Thika",
@@ -28,7 +28,7 @@ buses = [
   {
     bus_name: "Kingkong",
     seater: 25,
-    passengers: 25,
+    passengers: 0,
     status: "2 seats",
     from: "KU",
     to: "Juja",
@@ -37,19 +37,19 @@ buses = [
   {
     bus_name: "Mixtape",
     seater: 70,
-    passengers: 69,
+    passengers: 0,
     status: "Empty",
-    from: "Roysa",
+    from: "Roysambu",
     to: "CBD",
     time: "8:00pm"
   },
   {
     bus_name: "Sugar",
     seater: 10,
-    passengers: 10,
+    passengers: 0,
     status: "Empty",
     from: "Juja",
-    to: "TRM",
+    to: "CBD",
     time: "9:00am"
   }
 ]
@@ -61,7 +61,7 @@ buses.each { |bus| Bus.create(bus) }
 stations = [
   { station_name: "CBD", fare: 0 },
   { station_name: "allssops", fare: 1 },
-  { station_name: "Roysa", fare: 2 },
+  { station_name: "Roysambu", fare: 2 },
   { station_name: "Githurai", fare: 3 },
   { station_name: "Ku", fare: 4 },
   { station_name: "Ruiru-bypass", fare: 5 },

@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
 
     new_booking = {
       bus_id: booking_params[:bus_id],
-      user_id: 1,
+      user_id: params[:user_id],
       from_id: Station.find_by(station_name: booking_params[:from]).id,
       to_id: Station.find_by(station_name: booking_params[:to]).id,
       fare: diff * 10,
